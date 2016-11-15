@@ -16,9 +16,9 @@
 @implementation TTManager
 
 + (void)showGodModeForVotable:(YYVotable *)votable {
-    TBAlertController *god = [TBAlertController alertViewWithTitle:@"God Mode" message:@"Let's fuck shit up"];
+    TBAlertController *god = [TBAlertController alertViewWithTitle:@"God Mode" message:@"The power is yours"];
     [god addOtherButtonWithTitle:@"Make popular" target:self action:@selector(superUpvote:) withObject:votable];
-    [god addOtherButtonWithTitle:@"Murder this bitch" target:self action:@selector(superDownvote:) withObject:votable];
+    [god addOtherButtonWithTitle:@"Super downvote" target:self action:@selector(superDownvote:) withObject:votable];
     [god addOtherButtonWithTitle:@"Remove it for good" target:self action:@selector(superReport:) withObject:votable];
     [god addOtherButtonWithTitle:@"Revoke upvotes" target:self action:@selector(superUnpvote:) withObject:votable];
     [god addOtherButtonWithTitle:@"Revoke downvotes" target:self action:@selector(superUndownvote:) withObject:votable];
